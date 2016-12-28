@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.bwie.administrator.bawaymvp.MVP.view.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/Home_Frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:id="@+id/Home_group"
+        >
+        <RadioButton
+            android:id="@+id/GroupHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_select"
+            android:checked="true"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/Groupcategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/category_select"
+            />
+
+        <RadioButton
+            android:id="@+id/Groupshoppingcart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/shoppingcart_select"
+            />
+
+        <RadioButton
+            android:id="@+id/GroupMute"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/mute_select"
+            />
+    </RadioGroup>
+</LinearLayout>
